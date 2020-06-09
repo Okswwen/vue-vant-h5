@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>这是本地调整的</p>
+   <div>服务器调整的内容</div>
     <van-button type="default">默认按钮</van-button>
   </div>
 </template>
