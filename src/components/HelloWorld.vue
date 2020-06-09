@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h3>Ecosystem</h3>
     <van-button type="default">默认按钮</van-button>
   </div>
 </template>
