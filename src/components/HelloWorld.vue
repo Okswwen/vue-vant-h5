@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+   <div>服务器调整的内容</div>
     <van-button type="default">默认按钮</van-button>
   </div>
 </template>
