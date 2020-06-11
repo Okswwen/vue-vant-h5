@@ -19,6 +19,7 @@ export default {
   },
   methods: {
     getLocation() {
+      const _self = this
       AMap.plugin('AMap.Geolocation', function() {
       const geolocation = new AMap.Geolocation({
         // 是否使用高精度定位，默认：true
@@ -33,7 +34,9 @@ export default {
 
       function onComplete (data) {
         // data是具体的定位信息
-        console.log(`%c定位信息： ${JSON.stringify(data)}`, 'color:blue;font-size: 14px;font-weight: 600;')
+        console.log(_self)
+        _self.$store.dispatch('setLocation', data)
+        _self.$store.dispatch('setAddress', data.formattedAddress)
       }
 
       function onError (data) {
